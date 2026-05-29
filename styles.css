@@ -94,6 +94,7 @@ h1 {
 
 section {
   margin: 34px 0 44px;
+  scroll-margin-top: 88px;
 }
 
 h2 {
