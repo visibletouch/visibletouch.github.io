@@ -15,7 +15,6 @@
       <a href="#hardware">Hardware</a>
       <a href="#experiments">Experiments</a>
       <a href="#results">Results</a>
-      <a href="#videos">Videos</a>
       <a href="#conclusion">Conclusion</a>
     </nav>
 
@@ -27,15 +26,7 @@
       </header>
 
       <section class="teaser">
-        <img class="figure-img" src="overview.jpg" alt="Overview of Visible Touch">
-        <p class="caption">
-          Figure 1: Overview of Visible Touch. A low-cost magnetic contact sensor captures
-          per-taxel contact, which we render as an image-space overlay on the policy's RGB
-          observations. The augmented images are drop-in inputs for fine-tuning pretrained VLAs,
-          requiring no architectural changes. Contact overlays improve average task success by
-          +28.9% on LIBERO fine-tuning suites and +30.3% on real-world contact-rich manipulation
-          tasks.
-        </p>
+        <img class="figure-img" src="img/view.png" alt="Visible Touch teaser image">
       </section>
 
       <section id="abstract">
@@ -103,15 +94,12 @@
             the method does not need a sensor-specific force model.
           </li>
         </ul>
-        <div class="placeholder wide">
-          <div>
-            <strong>Projection Diagram Placeholder</strong>
-            <span>
-              Add the camera-projection derivation or a step-by-step diagram showing sensor
-              frame, robot kinematics, camera projection, and RGB compositing.
-            </span>
-          </div>
-        </div>
+        <img class="figure-img" src="img/overview.jpg" alt="Overview of the Visible Touch method">
+        <p class="caption">
+          Method overview. Visible Touch senses contact with low-cost magnetic tactile hardware,
+          renders contact measurements into camera views, and fine-tunes contact-aware policies
+          without changing the pretrained VLA architecture.
+        </p>
       </section>
 
       <section id="hardware">
@@ -135,7 +123,7 @@
           grippers. The consumable elastomer and magnet components cost under $5, while the full
           assembled sensor costs under $50 including reusable electronics.
         </p>
-        <img class="figure-img" src="hardware.jpg" alt="Visible Touch hardware system">
+        <img class="figure-img" src="img/hardware.jpg" alt="Visible Touch hardware system">
         <p class="caption">
           Figure 2: Hardware system. (a) Visuo-tactile setup: UFactory xArm7 with two RealSense
           cameras and two tactile sensors mounted on the gripper fingers. (b) Custom tactile sensor
@@ -250,11 +238,11 @@
         </p>
         <div class="figure-row">
           <figure>
-            <img class="figure-img" src="per_bucket_bc.png" alt="BC-Transformer bucketed results">
+            <img class="figure-img" src="img/per_bucket_bc.png" alt="BC-Transformer bucketed results">
             <figcaption>(a) BC-Transformer on LIBERO suites (40 tasks).</figcaption>
           </figure>
           <figure>
-            <img class="figure-img" src="per_bucket_miniVLA_full.png" alt="miniVLA bucketed results">
+            <img class="figure-img" src="img/per_bucket_miniVLA_full.png" alt="miniVLA bucketed results">
             <figcaption>(b) miniVLA on LIBERO_90 (90 tasks).</figcaption>
           </figure>
         </div>
@@ -291,11 +279,11 @@
 
         <div class="figure-row">
           <figure>
-            <img class="figure-img" src="realworld_tasks.png" alt="Real-world contact-rich tasks">
+            <img class="figure-img" src="img/realworld_tasks.png" alt="Real-world contact-rich tasks">
             <figcaption>(a) Real-world tasks.</figcaption>
           </figure>
           <figure>
-            <img class="figure-img" src="real_overlays.png" alt="Visible Touch real-world overlays">
+            <img class="figure-img" src="img/real_overlays.png" alt="Visible Touch real-world overlays">
             <figcaption>(b) Variants of Visible Touch contact overlay.</figcaption>
           </figure>
         </div>
@@ -313,7 +301,7 @@
         </p>
 
         <figure class="small-figure">
-          <img class="figure-img" src="tac-view.png" alt="Tac-View separate tactile image">
+          <img class="figure-img" src="img/tac-view.png" alt="Tac-View separate tactile image">
           <figcaption>Figure 5: Tac-View: contact arrows as a separate image.</figcaption>
         </figure>
 
@@ -353,31 +341,6 @@
             </tbody>
           </table>
         </div>
-      </section>
-
-      <section id="videos">
-        <h2>Video Demonstrations</h2>
-        <p>
-          This section is reserved for rollout videos once the final media files are available.
-          The intended organization is one row per real-world task, with side-by-side examples for
-          the baseline, Tac-View, and the strongest Visible Touch variant.
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Task</th>
-              <th>Baseline</th>
-              <th>Tac-View</th>
-              <th>Visible Touch</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td>Lift</td><td>Video placeholder</td><td>Video placeholder</td><td>Video placeholder</td></tr>
-            <tr><td>Transfer Tube</td><td>Video placeholder</td><td>Video placeholder</td><td>Video placeholder</td></tr>
-            <tr><td>Put Mug in Dishwasher</td><td>Video placeholder</td><td>Video placeholder</td><td>Video placeholder</td></tr>
-            <tr><td>Plug Charger</td><td>Video placeholder</td><td>Video placeholder</td><td>Video placeholder</td></tr>
-          </tbody>
-        </table>
       </section>
 
       <section id="conclusion">
