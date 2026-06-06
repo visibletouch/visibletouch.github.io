@@ -131,17 +131,10 @@ h4 {
   font-weight: 700;
 }
 
-.speed-badge {
-  display: inline-block;
-  margin-left: 6px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 1px 7px;
+.heading-note {
   color: var(--muted);
-  font-size: 11px;
+  font-size: 0.72em;
   font-weight: 600;
-  line-height: 1.5;
-  vertical-align: 1px;
 }
 
 p {
