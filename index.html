@@ -273,6 +273,23 @@
               </tbody>
             </table>
           </div>
+          <div class="tacview-explainer">
+            <figure>
+              <img class="tacview-img" src="img/tac-view.png" alt="Tac-View separate tactile rendering">
+              <figcaption>Tac-View renders contact arrows as a separate tactile image stream.</figcaption>
+            </figure>
+            <div>
+              <h4>Q2. Image-space overlays outperform separate-stream tactile rendering.</h4>
+              <p>
+                Tac-View receives the same contact arrows as Visible Touch, but places them in a
+                separate image instead of compositing them onto the RGB camera view. This tests
+                whether the gain comes from contact information alone or from where that
+                information is delivered. In the real-world results, direct image-space overlays
+                perform best because contact appears in the same visual frame the policy already
+                uses for spatial reasoning.
+              </p>
+            </div>
+          </div>
         </article>
       </section>
 

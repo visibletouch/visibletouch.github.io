@@ -276,6 +276,33 @@ figcaption {
   align-items: start;
 }
 
+.tacview-explainer {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr);
+  gap: 22px;
+  align-items: center;
+  margin: 22px 0 4px;
+}
+
+.tacview-explainer h4 {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.tacview-explainer p {
+  margin-bottom: 0;
+}
+
+.tacview-img {
+  display: block;
+  width: min(100%, 452px);
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #000;
+}
+
 .caption {
   margin: 10px auto 24px;
   color: var(--muted);
@@ -380,6 +407,10 @@ code {
   }
 
   .figure-row {
+    grid-template-columns: 1fr;
+  }
+
+  .tacview-explainer {
     grid-template-columns: 1fr;
   }
 
