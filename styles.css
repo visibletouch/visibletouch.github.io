@@ -13,7 +13,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 66px;
+  scroll-padding-top: 24px;
 }
 
 body {
@@ -66,13 +66,13 @@ a:hover {
 .page {
   width: min(1040px, calc(100% - 34px));
   margin: 0 auto;
-  padding: 42px 0 82px;
+  padding: 34px 0 82px;
   overflow-x: hidden;
 }
 
 .paper-header {
   text-align: center;
-  margin: 14px auto 54px;
+  margin: 6px auto 54px;
 }
 
 h1 {
@@ -100,7 +100,7 @@ h1 {
 
 section {
   margin: 42px 0 58px;
-  scroll-margin-top: 66px;
+  scroll-margin-top: 24px;
 }
 
 hr {
@@ -180,6 +180,10 @@ figcaption {
   background: #000;
 }
 
+.autoplay-video {
+  pointer-events: none;
+}
+
 .video-full {
   margin: 12px auto 0;
 }
@@ -191,6 +195,18 @@ figcaption {
 
 .finding {
   margin: 38px 0 52px;
+}
+
+.result-callout {
+  margin: 16px 0 18px;
+  border-left: 4px solid var(--link);
+  background: #f5f8fc;
+  padding: 14px 16px;
+  color: #233043;
+}
+
+.result-callout strong {
+  color: #111827;
 }
 
 .video-grid {
@@ -345,7 +361,7 @@ code {
     width: 100%;
     padding-right: 12px;
     padding-left: 12px;
-    padding-top: 28px;
+    padding-top: 24px;
   }
 
   .links {
