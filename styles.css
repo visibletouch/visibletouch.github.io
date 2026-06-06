@@ -197,16 +197,9 @@ figcaption {
   margin: 38px 0 52px;
 }
 
-.result-callout {
-  margin: 16px 0 18px;
-  border-left: 4px solid var(--link);
-  background: #f5f8fc;
-  padding: 14px 16px;
-  color: #233043;
-}
-
-.result-callout strong {
-  color: #111827;
+.result-note {
+  margin: 10px 0 18px;
+  color: var(--text);
 }
 
 .video-grid {
