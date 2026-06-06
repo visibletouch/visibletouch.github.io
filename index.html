@@ -133,11 +133,12 @@
               <thead>
                 <tr>
                   <th rowspan="2">Method</th>
-                  <th>Pretraining</th>
+                  <th colspan="2">Pretraining</th>
                   <th colspan="5">Fine-tuning (best-observed)</th>
                 </tr>
                 <tr>
                   <th>LIBERO_90</th>
+                  <th>LIBERO_90 (VQ8, hist=2)</th>
                   <th>OBJECT</th>
                   <th>GOAL</th>
                   <th>SPATIAL</th>
@@ -146,17 +147,16 @@
                 </tr>
               </thead>
               <tbody>
-                <tr><td>Baseline</td><td>52.6%</td><td>51.0%</td><td>48.5%</td><td>71.5%</td><td>32.5%</td><td>50.9%</td></tr>
-                <tr><td>Visible Touch</td><td><strong>64.0%</strong></td><td><strong>73.5%</strong></td><td><strong>80.5%</strong></td><td><strong>94.0%</strong></td><td><strong>71.0%</strong></td><td><strong>79.8%</strong></td></tr>
+                <tr><td>Baseline</td><td>52.6%</td><td>82.0%</td><td>51.0%</td><td>48.5%</td><td>71.5%</td><td>32.5%</td><td>50.9%</td></tr>
+                <tr><td>Visible Touch</td><td><strong>64.0%</strong></td><td><strong>86.3%</strong></td><td><strong>73.5%</strong></td><td><strong>80.5%</strong></td><td><strong>94.0%</strong></td><td><strong>71.0%</strong></td><td><strong>79.8%</strong></td></tr>
               </tbody>
             </table>
           </div>
           <p class="result-note">
             <strong>Additional miniVLA comparison:</strong>
-            On <strong>LIBERO_90 (VQ8, hist=2)</strong>, the previously reported miniVLA result
-            is <strong>82%</strong>, while Visible Touch-miniVLA reaches <strong>86.3%</strong>.
-            This indicates that contact overlays remain effective under a different miniVLA
-            architectural configuration.
+            The VQ8/history-2 result uses the architecture from the headline LIBERO_90 result in
+            the original miniVLA work, showing that contact overlays remain effective under a
+            different miniVLA configuration.
           </p>
         </article>
 
