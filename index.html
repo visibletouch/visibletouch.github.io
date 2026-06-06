@@ -7,7 +7,7 @@
     <meta name="description" content="Project page for Visible Touch: Rendering Contact for Visuomotor Policies.">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body id="home">
     <nav class="top-nav" aria-label="Page navigation">
       <a href="#home">Home</a>
       <a href="#abstract">Abstract</a>
@@ -15,10 +15,11 @@
       <a href="#hardware">Hardware</a>
       <a href="#experiments">Experiments</a>
       <a href="#results">Results</a>
+      <a href="#videos">Videos</a>
       <a href="#conclusion">Conclusion</a>
     </nav>
 
-    <main id="home" class="page">
+    <main class="page">
       <header class="paper-header">
         <h1>Visible Touch: Rendering Contact for Visuomotor Policies</h1>
         <p class="authors">Anonymous Author(s)</p>
@@ -51,6 +52,14 @@
           average, and &pi;0.5 on four real-world contact-rich tasks gains 30 points with our
           custom sensor.
         </p>
+      </section>
+
+      <section id="overview-video">
+        <h2>Overview Video</h2>
+        <video class="video-full" controls preload="metadata" playsinline>
+          <source src="videos/overview.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </section>
 
       <section id="method">
@@ -340,6 +349,97 @@
               <tr><td>Visible Touch: Multi-arrows</td><td><strong>24/30</strong></td><td><strong>24/30</strong></td><td><strong>16/30</strong></td><td><strong>28/30</strong></td><td><strong>22/30</strong></td><td><strong>21/30</strong></td><td><strong>18/30</strong></td><td><strong>2/30</strong></td></tr>
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <section id="videos">
+        <h2>Demo Videos</h2>
+        <p>
+          These videos show successful task rollouts and the corresponding contact-overlay
+          renderings used by Visible Touch. The overlay videos make the contact signal visible in
+          the same RGB frame consumed by the policy.
+        </p>
+
+        <h3>Cube</h3>
+        <div class="video-grid two">
+          <article class="video-card">
+            <h4>Rollout Success</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/cube_success.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h4>9-Arrow Overlay</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/cube_9arrow_overlay.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
+
+        <h3>Transfer Tube</h3>
+        <div class="video-grid two">
+          <article class="video-card">
+            <h4>Rollout Success</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/tube_success.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h4>9-Arrow Overlay</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/tube_9arrow_overlay.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
+
+        <h3>Plug Charger</h3>
+        <div class="video-grid two">
+          <article class="video-card">
+            <h4>Rollout Success</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/charger_success.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h4>9-Arrow Overlay</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/charger_9arrow_overlay.mp4" type="video/mp4">
+            </video>
+          </article>
+        </div>
+
+        <h3>Put Mug in Dishwasher</h3>
+        <div class="video-grid">
+          <article class="video-card">
+            <h4>Rollout Success</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/dishwasher_success.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h4>9-Arrow Overlay</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/dishwasher_9arrow_overlay.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h4>1-Arrow Overlay</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/dishwasher_1arrow_overlay.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h4>Binbar Overlay</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/dishwasher_binbar_overlay.mp4" type="video/mp4">
+            </video>
+          </article>
+          <article class="video-card">
+            <h4>Tac-View</h4>
+            <video controls preload="metadata" playsinline>
+              <source src="videos/dishwasher_tacview.mp4" type="video/mp4">
+            </video>
+          </article>
         </div>
       </section>
 

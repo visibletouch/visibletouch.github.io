@@ -111,6 +111,12 @@ h3 {
   font-size: 20px;
 }
 
+h4 {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
 p {
   margin: 0 0 14px;
   overflow-wrap: anywhere;
@@ -146,6 +152,35 @@ figcaption {
   color: var(--muted);
   font-size: 13px;
   text-align: center;
+}
+
+.video-full,
+.video-card video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  background: #000;
+}
+
+.video-full {
+  margin: 12px auto 0;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 12px 0 24px;
+}
+
+.video-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.video-card {
+  min-width: 0;
 }
 
 .placeholder {
@@ -307,6 +342,11 @@ code {
   }
 
   .figure-row {
+    grid-template-columns: 1fr;
+  }
+
+  .video-grid,
+  .video-grid.two {
     grid-template-columns: 1fr;
   }
 
