@@ -21,7 +21,7 @@ body {
   overflow-x: hidden;
   background: #fff;
   color: var(--text);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Google Sans", "Product Sans", Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -79,7 +79,7 @@ h1 {
   overflow-wrap: anywhere;
   max-width: 940px;
   margin: 0 auto 18px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Google Sans", "Product Sans", Roboto, Arial, sans-serif;
   font-size: 46px;
   font-weight: 700;
   letter-spacing: 0;
@@ -113,16 +113,18 @@ h2 {
   margin: 0 0 14px;
   border-bottom: 1px solid var(--border);
   padding-bottom: 7px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Google Sans", "Product Sans", Roboto, Arial, sans-serif;
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 0;
+  text-align: center;
 }
 
 h3 {
   margin: 26px 0 10px;
   font-size: 21px;
   font-weight: 700;
+  text-align: center;
 }
 
 h4 {

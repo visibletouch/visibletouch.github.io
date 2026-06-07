@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Visible Touch: Rendering Contact for Visuomotor Policies</title>
     <meta name="description" content="Project page for Visible Touch: Rendering Contact for Visuomotor Policies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body id="home">
@@ -41,6 +44,75 @@
           average, and &pi;0.5 on four real-world contact-rich tasks gains 30 points with our
           custom sensor.
         </p>
+      </section>
+
+      <section id="videos">
+        <h2>Sample Policy Rollouts <span class="heading-note">(3x Speed)</span></h2>
+        <p>
+          The clips below show successful task rollouts and the corresponding contact-overlay
+          renderings used by Visible Touch. Overlay videos make the tactile signal visible in the
+          same RGB frame consumed by the policy.
+        </p>
+
+        <h3>Cube</h3>
+        <div class="video-grid two">
+          <article class="video-card">
+            <h4>Rollout Success</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/cube_success.mp4" type="video/mp4"></video>
+          </article>
+          <article class="video-card">
+            <h4>9-Arrow Overlay</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/cube_9arrow_overlay.mp4" type="video/mp4"></video>
+          </article>
+        </div>
+
+        <h3>Put Mug in Dishwasher</h3>
+        <div class="video-grid two">
+          <article class="video-card">
+            <h4>Rollout Success</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_success.mp4" type="video/mp4"></video>
+          </article>
+          <article class="video-card">
+            <h4>9-Arrow Overlay</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_9arrow_overlay.mp4" type="video/mp4"></video>
+          </article>
+          <article class="video-card">
+            <h4>1-Arrow Overlay</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_1arrow_overlay.mp4" type="video/mp4"></video>
+          </article>
+          <article class="video-card">
+            <h4>Binbar Overlay</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_binbar_overlay.mp4" type="video/mp4"></video>
+          </article>
+          <article class="video-card">
+            <h4>Tac-View</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_tacview.mp4" type="video/mp4"></video>
+          </article>
+        </div>
+
+        <h3>Transfer Tube</h3>
+        <div class="video-grid two">
+          <article class="video-card">
+            <h4>Rollout Success</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/tube_success.mp4" type="video/mp4"></video>
+          </article>
+          <article class="video-card">
+            <h4>9-Arrow Overlay</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/tube_9arrow_overlay.mp4" type="video/mp4"></video>
+          </article>
+        </div>
+
+        <h3>Plug Charger</h3>
+        <div class="video-grid two">
+          <article class="video-card">
+            <h4>Rollout Success</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/charger_success.mp4" type="video/mp4"></video>
+          </article>
+          <article class="video-card">
+            <h4>9-Arrow Overlay</h4>
+            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/charger_9arrow_overlay.mp4" type="video/mp4"></video>
+          </article>
+        </div>
       </section>
 
       <section id="method">
@@ -531,76 +603,6 @@
           sensor.
         </p>
       </section>
-
-      <section id="videos">
-        <h2>Sample Policy Rollouts <span class="heading-note">(3x Speed)</span></h2>
-        <p>
-          The clips below show successful task rollouts and the corresponding contact-overlay
-          renderings used by Visible Touch. Overlay videos make the tactile signal visible in the
-          same RGB frame consumed by the policy.
-        </p>
-
-        <h3>Cube</h3>
-        <div class="video-grid two">
-          <article class="video-card">
-            <h4>Rollout Success</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/cube_success.mp4" type="video/mp4"></video>
-          </article>
-          <article class="video-card">
-            <h4>9-Arrow Overlay</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/cube_9arrow_overlay.mp4" type="video/mp4"></video>
-          </article>
-        </div>
-
-        <h3>Put Mug in Dishwasher</h3>
-        <div class="video-grid two">
-          <article class="video-card">
-            <h4>Rollout Success</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_success.mp4" type="video/mp4"></video>
-          </article>
-          <article class="video-card">
-            <h4>9-Arrow Overlay</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_9arrow_overlay.mp4" type="video/mp4"></video>
-          </article>
-          <article class="video-card">
-            <h4>1-Arrow Overlay</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_1arrow_overlay.mp4" type="video/mp4"></video>
-          </article>
-          <article class="video-card">
-            <h4>Binbar Overlay</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_binbar_overlay.mp4" type="video/mp4"></video>
-          </article>
-          <article class="video-card">
-            <h4>Tac-View</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_tacview.mp4" type="video/mp4"></video>
-          </article>
-        </div>
-
-        <h3>Transfer Tube</h3>
-        <div class="video-grid two">
-          <article class="video-card">
-            <h4>Rollout Success</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/tube_success.mp4" type="video/mp4"></video>
-          </article>
-          <article class="video-card">
-            <h4>9-Arrow Overlay</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/tube_9arrow_overlay.mp4" type="video/mp4"></video>
-          </article>
-        </div>
-
-        <h3>Plug Charger</h3>
-        <div class="video-grid two">
-          <article class="video-card">
-            <h4>Rollout Success</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/charger_success.mp4" type="video/mp4"></video>
-          </article>
-          <article class="video-card">
-            <h4>9-Arrow Overlay</h4>
-            <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/charger_9arrow_overlay.mp4" type="video/mp4"></video>
-          </article>
-        </div>
-      </section>
-
       <hr>
 
       <section id="conclusion">
