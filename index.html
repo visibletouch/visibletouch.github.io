@@ -5,34 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Visible Touch: Rendering Contact for Visuomotor Policies</title>
     <meta name="description" content="Project page for Visible Touch: Rendering Contact for Visuomotor Policies (arXiv:2609.14156). Image-space contact overlays and a low-cost open-source magnetic tactile sensor for image-conditioned policies and pretrained VLAs.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://visibletouch.github.io/">
+    <meta property="og:title" content="Visible Touch: Rendering Contact for Visuomotor Policies">
+    <meta property="og:description" content="Image-space contact overlays and a low-cost open-source magnetic tactile sensor for image-conditioned policies and pretrained VLAs. CoRL 2026.">
+    <meta property="og:image" content="https://visibletouch.github.io/img/overview_method.png">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Google+Sans+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body id="home">
-    <main class="page">
-      <header class="paper-header">
-        <h1>Visible Touch: Rendering Contact for Visuomotor Policies</h1>
+  <body>
+    <nav class="top-nav" aria-label="Sections">
+      <div class="nav-inner">
+        <a class="nav-brand" href="#top">Visible Touch</a>
+        <div class="nav-links">
+          <a href="#abstract">Abstract</a>
+          <a href="#videos">Rollouts</a>
+          <a href="#method">Method</a>
+          <a href="#findings">Results</a>
+          <a href="#hardware">Hardware</a>
+          <a href="#appendix-tables">Appendix</a>
+          <a href="#citation">BibTeX</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="hero-inner">
+        <p class="venue-badge">CoRL 2026</p>
+        <h1>
+          <span class="title-accent">Visible Touch</span><span class="visually-hidden">: </span>
+          <span class="title-sub">Rendering Contact for Visuomotor Policies</span>
+        </h1>
         <p class="authors">
-          Metin Alp Dogan<sup>*</sup>, Edward Sun<sup>*</sup>, Feng Xu<sup>*</sup>, Daniel Wu, Allen Peng,
-          Dennis Hong, Yuchen Cui
+          <span class="author">Metin Alp Dogan<sup>*</sup></span>
+          <span class="author">Edward Sun<sup>*</sup></span>
+          <span class="author">Feng Xu<sup>*</sup></span>
+          <span class="author">Daniel Wu</span>
+          <span class="author">Allen Peng</span>
+          <span class="author">Dennis Hong</span>
+          <span class="author">Yuchen Cui</span>
         </p>
         <p class="affiliation">University of California, Los Angeles</p>
-        <p class="equal-note"><sup>*</sup> Equal contribution</p>
-        <p class="venue"><strong>Accepted to CoRL 2026</strong></p>
-        <p class="links">
-          <a class="link-btn" href="https://arxiv.org/abs/2609.14156">arXiv</a>
-          <a class="link-btn" href="https://arxiv.org/pdf/2609.14156">PDF</a>
-        </p>
+        <p class="equal-note"><sup>*</sup>Equal contribution</p>
+        <div class="links">
+          <a class="link-btn" href="https://arxiv.org/pdf/2609.14156"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg><span>Paper</span></a>
+          <a class="link-btn" href="https://arxiv.org/abs/2609.14156"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg><span>arXiv</span></a>
+          <a class="link-btn" href="https://github.com/qaz1678249/visibletouch"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span>Hardware</span></a>
+          <a class="link-btn" href="#citation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"/></svg><span>BibTeX</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page">
+      <figure class="teaser">
         <video class="hero-video" controls autoplay muted loop preload="metadata" playsinline>
           <source src="videos/overview.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-      </header>
+        <figcaption class="tldr">
+          <strong>TL;DR</strong> Visible Touch renders contact as an image-space overlay on the
+          policy's RGB observations, adding touch to any image-conditioned policy, including
+          pretrained VLAs, with no architectural changes.
+        </figcaption>
+      </figure>
+
+      <div class="highlights">
+        <div class="stat"><span class="stat-value">+15.7<small>pp</small></span><span class="stat-label">BC-Transformer on LIBERO (2&#8209;view)</span></div>
+        <div class="stat"><span class="stat-value">+25.3<small>pp</small></span><span class="stat-label">miniVLA fine-tuning on LIBERO</span></div>
+        <div class="stat"><span class="stat-value">+30.3<small>pp</small></span><span class="stat-label">&pi;<sub>0.5</sub> on four real-world tasks</span></div>
+        <div class="stat"><span class="stat-value">&lt;$50</span><span class="stat-label">open-source sensor, fully assembled</span></div>
+      </div>
 
       <section id="abstract">
         <h2>Abstract</h2>
+        <div class="abstract-card">
         <p>
           Integrating contact information into visuomotor policies remains an open problem. Touch
           is essential to robust manipulation, yet most modern policies, including pretrained
@@ -58,11 +107,12 @@
           <strong>Keywords:</strong> Imitation Learning; Contact-Rich Manipulation; Tactile
           Sensing; Vision-Language-Action Models; Visual Overlays
         </p>
+        </div>
       </section>
 
       <section id="videos">
         <h2>Sample Policy Rollouts <span class="heading-note">(3x Speed)</span></h2>
-        <p>
+        <p class="section-lead">
           The clips below show successful &pi;<sub>0.5</sub> rollouts on the real-world tasks and the
           corresponding contact-overlay renderings used by Visible Touch. Overlay videos make the
           tactile signal visible in the same RGB frame consumed by the policy. Multi-arrows renders
@@ -93,6 +143,8 @@
             <h4>Multi-arrows Overlay</h4>
             <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_9arrow_overlay.mp4" type="video/mp4"></video>
           </article>
+        </div>
+        <div class="video-grid">
           <article class="video-card">
             <h4>Avg. Arrow Overlay</h4>
             <video class="autoplay-video" autoplay muted loop playsinline preload="metadata"><source src="videos/dishwasher_1arrow_overlay.mp4" type="video/mp4"></video>
@@ -134,6 +186,15 @@
 
       <section id="method">
         <h2>Method</h2>
+        <img loading="lazy" class="figure-img" src="img/overview_method.png" alt="Overview of Visible Touch method">
+        <p class="caption">
+          <span class="fig-label">Figure 1:</span> Overview of Visible Touch. A low-cost magnetic contact sensor captures
+          per-taxel contact, which we render as an image-space overlay on the policy's RGB
+          observations. The augmented images are drop-in inputs for fine-tuning pretrained VLAs,
+          requiring no architectural changes. Contact overlays improve average task success by
+          +25.3pp on LIBERO fine-tuning suites and +30.3pp on real-world contact-rich manipulation
+          tasks.
+        </p>
         <p>
           Visible Touch has two coupled components: a rendering pipeline that projects per-element
           contact measurements onto the policy's RGB observations as a spatial overlay, and a
@@ -167,8 +228,8 @@
           the per-finger magnitude at a fixed image location, isolating whether the policy uses the
           overlay as a directional cue or as a contact-event signal.
         </p>
-        <p><strong>Contributions.</strong></p>
-        <ul>
+        <h3 class="subhead">Contributions</h3>
+        <ul class="contrib">
           <li>
             <strong>Visible Touch:</strong> an image-space contact-overlay method that drops into any
             image-conditioned policy with no architectural changes and no force calibration. The
@@ -189,31 +250,20 @@
             matches the spatial consistency of the underlying contact.
           </li>
         </ul>
-        <img class="figure-img" src="img/overview_method.png" alt="Overview of Visible Touch method">
-        <p class="caption">
-          Figure 1: Overview of Visible Touch. A low-cost magnetic contact sensor captures
-          per-taxel contact, which we render as an image-space overlay on the policy's RGB
-          observations. The augmented images are drop-in inputs for fine-tuning pretrained VLAs,
-          requiring no architectural changes. Contact overlays improve average task success by
-          +25.3pp on LIBERO fine-tuning suites and +30.3pp on real-world contact-rich manipulation
-          tasks.
-        </p>
       </section>
 
-      <hr>
 
       <section id="findings">
         <h2>Key Findings</h2>
-        <p>
-          Experiments are designed around three research questions. <strong>Q1:</strong> Does
-          Visible Touch improve visuomotor policy performance, and does the improvement transfer
-          across architectures? <strong>Q2:</strong> How does image-space contact rendering compare
-          with alternative contact-integration strategies? <strong>Q3:</strong> When and how do
-          overlays help most?
-        </p>
+        <p class="section-lead centered">Experiments are designed around three research questions.</p>
+        <div class="rq-grid">
+          <div class="rq"><span class="q-tag q1">Q1</span><p>Does Visible Touch improve visuomotor policy performance, and does the improvement transfer across architectures?</p></div>
+          <div class="rq"><span class="q-tag q2">Q2</span><p>How does image-space contact rendering compare with alternative contact-integration strategies?</p></div>
+          <div class="rq"><span class="q-tag q3">Q3</span><p>When and how do overlays help most?</p></div>
+        </div>
 
         <article class="finding">
-          <h3>Q1. Image-space contact improves BC-Transformer across camera settings.</h3>
+          <h3><span class="q-tag q1">Q1</span> Image-space contact improves BC-Transformer across camera settings.</h3>
           <p>
             <strong>Setup.</strong> We use all four LIBERO suites. Since LIBERO exposes no native
             tactile observations, we extract per-contact force vectors from the MuJoCo contact array
@@ -237,7 +287,7 @@
           </p>
           <div class="table-wrap">
             <table>
-              <caption>Table 5: BC-Transformer success rates (%) on LIBERO suites across camera configurations (n=3 seeds).</caption>
+              <caption><span class="fig-label">Table 5:</span> BC-Transformer success rates (%) on LIBERO suites across camera configurations (n=3 seeds).</caption>
               <thead>
                 <tr>
                   <th rowspan="2">Suite</th>
@@ -261,15 +311,15 @@
               </tbody>
             </table>
           </div>
-          <img class="figure-img" src="img/bc_transformer_results.png" alt="BC-Transformer LIBERO results">
+          <img loading="lazy" class="figure-img" src="img/bc_transformer_results.png" alt="BC-Transformer LIBERO results">
           <p class="caption">
-            Figure 3: BC-Transformer on LIBERO across camera configurations (n=3 seeds, error
+            <span class="fig-label">Figure 3:</span> BC-Transformer on LIBERO across camera configurations (n=3 seeds, error
             bars are std). Orange bars show Visible Touch (ours); gray bars show plain baselines;
             blue bars show the Proprio baseline that receives an aggregated 12-D contact wrench
             through the proprioceptive state. Visible Touch consistently improves over plain images
             in both 1-view and 2-view, with the largest gain on LIBERO_LONG (+33.7pp 2-view).
           </p>
-          <h4>Q2. Image-space delivery outperforms a compact state-vector baseline.</h4>
+          <h4><span class="q-tag q2">Q2</span> Image-space delivery outperforms a compact state-vector baseline.</h4>
           <p>
             The Proprio baseline concatenates an aggregated 12-D contact wrench to the
             proprioceptive state. In the 2-view setting, Visible Touch exceeds Proprio by +21.4pp on
@@ -285,7 +335,7 @@
         </article>
 
         <article class="finding">
-          <h3>Q1. The same pattern transfers to miniVLA.</h3>
+          <h3><span class="q-tag q1">Q1</span> The same pattern transfers to miniVLA.</h3>
           <p>
             For miniVLA (Qwen2.5 0.5B backbone, DINOv2 + SigLIP encoders at 224 px), we pretrain
             from scratch on LIBERO_90 (vs. the publicly released minivla-libero90-prismatic
@@ -298,7 +348,7 @@
           <div class="table-wrap">
             <table>
               <caption>
-                Table 1: miniVLA success rates (%) on LIBERO across pretraining and fine-tuning.
+                <span class="fig-label">Table 1:</span> miniVLA success rates (%) on LIBERO across pretraining and fine-tuning.
                 LIBERO_90 pretraining results are from single runs. For fine-tuning, baseline
                 entries are the strongest single-run baselines available per suite, while Visible
                 Touch results are mean &plusmn; s.e. over 5 training seeds using the suite-specific
@@ -321,7 +371,7 @@
               </thead>
               <tbody>
                 <tr><td>Baseline</td><td>48.3%</td><td>51.0%</td><td>48.5%</td><td>71.5%</td><td>32.5%</td><td>50.9%</td></tr>
-                <tr><td>Visible Touch</td><td><strong>63.2%</strong></td><td><strong>70.6 &plusmn; 4.6%</strong></td><td><strong>80.5 &plusmn; 4.3%</strong></td><td><strong>87.0 &plusmn; 1.8%</strong></td><td><strong>66.6 &plusmn; 2.2%</strong></td><td><strong>76.2%</strong></td></tr>
+                <tr class="ours"><td>Visible Touch</td><td><strong>63.2%</strong></td><td><strong>70.6 &plusmn; 4.6%</strong></td><td><strong>80.5 &plusmn; 4.3%</strong></td><td><strong>87.0 &plusmn; 1.8%</strong></td><td><strong>66.6 &plusmn; 2.2%</strong></td><td><strong>76.2%</strong></td></tr>
               </tbody>
             </table>
           </div>
@@ -337,7 +387,7 @@
         </article>
 
         <article class="finding">
-          <h3>Q3a. Overlay benefit scales with task headroom and grasp structure.</h3>
+          <h3><span class="q-tag q3">Q3a</span> Overlay benefit scales with task headroom and grasp structure.</h3>
           <p>
             For BC-Transformer, the per-task improvement across all 40 LIBERO tasks (2-view)
             correlates strongly with task headroom (r = 0.924, p &lt; 10<sup>-3</sup>): overlays help
@@ -350,16 +400,16 @@
           </p>
           <div class="figure-row">
             <figure>
-              <img class="figure-img" src="img/bucket_bc.png" alt="BC-Transformer grasp bucket results">
+              <img loading="lazy" class="figure-img" src="img/bucket_bc.png" alt="BC-Transformer grasp bucket results">
               <figcaption>(a) BC-Transformer on LIBERO suites (40 tasks).</figcaption>
             </figure>
             <figure>
-              <img class="figure-img" src="img/bucket_minivla.png" alt="miniVLA grasp bucket results">
+              <img loading="lazy" class="figure-img" src="img/bucket_minivla.png" alt="miniVLA grasp bucket results">
               <figcaption>(b) miniVLA on LIBERO_90 (90 tasks).</figcaption>
             </figure>
           </div>
           <p class="caption">
-            Figure 4: Success rates of Visible Touch (Avg. Arrow overlay) over plain baselines,
+            <span class="fig-label">Figure 4:</span> Success rates of Visible Touch (Avg. Arrow overlay) over plain baselines,
             bucketed by gripper-close events. Tasks with no grasps show no benefit; single-grasp
             tasks show modest gains; multi-grasp tasks show the largest gains. The pattern holds
             across both BC-Transformer (a) and a pretrained miniVLA on LIBERO_90 (b).
@@ -367,7 +417,7 @@
         </article>
 
         <article class="finding">
-          <h3>Q3b. Overlay granularity has a non-monotonic optimum in simulation.</h3>
+          <h3><span class="q-tag q3">Q3b</span> Overlay granularity has a non-monotonic optimum in simulation.</h3>
           <p>
             The coarser Binbars representation is competitive with the default Avg. Arrow, matching
             it within noise on three suites and falling behind only on LIBERO_LONG (-7.7pp). The
@@ -379,7 +429,7 @@
           </p>
           <div class="table-wrap">
             <table>
-              <caption>Table 2: Success rates (%) for overlay variants on LIBERO suites (BC-Transformer, 2-view, n=3 seeds).</caption>
+              <caption><span class="fig-label">Table 2:</span> Success rates (%) for overlay variants on LIBERO suites (BC-Transformer, 2-view, n=3 seeds).</caption>
               <thead>
                 <tr>
                   <th>Visible Touch variant</th>
@@ -392,7 +442,7 @@
               </thead>
               <tbody>
                 <tr><td>Multi-arrows</td><td>94.3 &plusmn; 5.6</td><td>91.8 &plusmn; 0.5</td><td>90.2 &plusmn; 1.0</td><td>76.2 &plusmn; 2.7</td><td>88.1</td></tr>
-                <tr><td>Avg. Arrow</td><td><strong>98.2 &plusmn; 1.2</strong></td><td><strong>92.8 &plusmn; 2.5</strong></td><td>92.3 &plusmn; 2.7</td><td><strong>86.5 &plusmn; 2.3</strong></td><td><strong>92.5</strong></td></tr>
+                <tr class="ours"><td>Avg. Arrow</td><td><strong>98.2 &plusmn; 1.2</strong></td><td><strong>92.8 &plusmn; 2.5</strong></td><td>92.3 &plusmn; 2.7</td><td><strong>86.5 &plusmn; 2.3</strong></td><td><strong>92.5</strong></td></tr>
                 <tr><td>Binbars</td><td>98.0 &plusmn; 0.9</td><td>92.7 &plusmn; 1.7</td><td><strong>94.5 &plusmn; 1.5</strong></td><td>78.8 &plusmn; 2.6</td><td>91.0</td></tr>
               </tbody>
             </table>
@@ -400,7 +450,7 @@
         </article>
 
         <article class="finding">
-          <h3>Q1. Visible Touch transfers to real-world contact-rich manipulation.</h3>
+          <h3><span class="q-tag q1">Q1</span> Visible Touch transfers to real-world contact-rich manipulation.</h3>
           <p>
             We fine-tune &pi;<sub>0.5</sub> (pi05_droid checkpoint, 2.3B) with LoRA on two image
             views and compare eight input conditions on four contact-rich tasks, 30 trials per
@@ -415,22 +465,22 @@
           </p>
           <div class="figure-row">
             <figure>
-              <img class="figure-img" src="img/realworld_tasks_updated.png" alt="Real-world contact-rich tasks">
+              <img loading="lazy" class="figure-img" src="img/realworld_tasks_updated.png" alt="Real-world contact-rich tasks">
               <figcaption>(a) Real-world tasks (yellow areas highlight initial state randomization).</figcaption>
             </figure>
             <figure>
-              <img class="figure-img" src="img/real_overlays_updated.png" alt="Visible Touch real-world overlays">
+              <img loading="lazy" class="figure-img" src="img/real_overlays_updated.png" alt="Visible Touch real-world overlays">
               <figcaption>(b) Variants of Visible Touch contact overlay.</figcaption>
             </figure>
           </div>
           <p class="caption">
-            Figure 5: Real-world experimental setup. (a) Contact-rich manipulation tasks: Lift,
+            <span class="fig-label">Figure 5:</span> Real-world experimental setup. (a) Contact-rich manipulation tasks: Lift,
             Transfer Tube, Put Mug in Dishwasher, and Plug Charger. (b) Example contact overlays
             rendered onto external and wrist camera views.
           </p>
-          <img class="figure-img" src="img/realworld_results.png" alt="Real-world evaluation results across eight input conditions">
+          <img loading="lazy" class="figure-img" src="img/realworld_results.png" alt="Real-world evaluation results across eight input conditions">
           <p class="caption">
-            Figure 7: Real-world evaluation of &pi;<sub>0.5</sub> fine-tuning across four
+            <span class="fig-label">Figure 7:</span> Real-world evaluation of &pi;<sub>0.5</sub> fine-tuning across four
             contact-rich manipulation tasks (successes out of 30 trials per condition, sub-task
             scored). Final-stage success corresponds to complete end-to-end task success. Hatched
             bars denote the binary ablations of the matching solid variant: Binary Contact (1x) and
@@ -439,7 +489,7 @@
           <div class="table-wrap">
             <table>
               <caption>
-                Table 15: Real-world evaluation of &pi;<sub>0.5</sub> fine-tuning across four
+                <span class="fig-label">Table 15:</span> Real-world evaluation of &pi;<sub>0.5</sub> fine-tuning across four
                 contact-rich manipulation tasks (30 trials per condition, sub-task scored).
                 Final-stage success corresponds to complete end-to-end task success. Binary Contact
                 (1x) and (9x) denote aggregate per-finger and per-taxel binary contact, respectively.
@@ -471,7 +521,7 @@
                 <tr><td>Visible Touch: Binary Contact (1x)</td><td>19/30</td><td>17/30</td><td>2/30</td><td>13/30</td><td>5/30</td><td>4/30</td><td>16/30</td><td>0/30</td></tr>
                 <tr><td>Visible Touch: Avg. Arrow</td><td>23/30</td><td>17/30</td><td>3/30</td><td>23/30</td><td>14/30</td><td>12/30</td><td>13/30</td><td>0/30</td></tr>
                 <tr><td>Visible Touch: Binary Contact (9x)</td><td>9/30</td><td>6/30</td><td>0/30</td><td>25/30</td><td>13/30</td><td>12/30</td><td>11/30</td><td>0/30</td></tr>
-                <tr><td>Visible Touch: Multi-arrows</td><td><strong>24/30</strong></td><td><strong>24/30</strong></td><td><strong>16/30</strong></td><td><strong>28/30</strong></td><td><strong>22/30</strong></td><td><strong>21/30</strong></td><td><strong>18/30</strong></td><td><strong>2/30</strong></td></tr>
+                <tr class="ours"><td>Visible Touch: Multi-arrows</td><td><strong>24/30</strong></td><td><strong>24/30</strong></td><td><strong>16/30</strong></td><td><strong>28/30</strong></td><td><strong>22/30</strong></td><td><strong>21/30</strong></td><td><strong>18/30</strong></td><td><strong>2/30</strong></td></tr>
               </tbody>
             </table>
           </div>
@@ -495,11 +545,11 @@
           </p>
           <div class="tacview-explainer">
             <figure>
-              <img class="tacview-img" src="img/tac-view.png" alt="Tac-View separate tactile rendering">
-              <figcaption>Figure 6: Tac-View renders contact arrows as a separate image. Arrow colors encode the normalized z-reading of each taxel, from green (0) to red (1).</figcaption>
+              <img loading="lazy" class="tacview-img" src="img/tac-view.png" alt="Tac-View separate tactile rendering">
+              <figcaption><span class="fig-label">Figure 6:</span> Tac-View renders contact arrows as a separate image. Arrow colors encode the normalized z-reading of each taxel, from green (0) to red (1).</figcaption>
             </figure>
             <div>
-              <h4>Q2. Image-space overlays outperform separate-stream tactile rendering.</h4>
+              <h4><span class="q-tag q2">Q2</span> Image-space overlays outperform separate-stream tactile rendering.</h4>
               <p>
                 Tac-View provides the same per-taxel contact arrows as Multi-arrows through a
                 separate image stream in one of &pi;<sub>0.5</sub>'s camera slots, mirroring how
@@ -517,7 +567,7 @@
             </div>
           </div>
           <p>
-            <strong>Q3b. Optimal granularity reverses in the real world.</strong> Multi-arrows,
+            <strong><span class="q-tag q3">Q3b</span> Optimal granularity reverses in the real world.</strong> Multi-arrows,
             which renders all 9 per-taxel readings per finger, is strongest in every column,
             reversing the simulation finding where Avg. Arrow dominated. The Binary Contact (9x)
             ablation shows that finer spatial granularity alone is insufficient: preserving
@@ -537,7 +587,6 @@
         </article>
       </section>
 
-      <hr>
 
       <section id="hardware">
         <h2>Hardware</h2>
@@ -565,18 +614,26 @@
           curing. We release the
           CAD-to-mold pipeline and the PCB layout for the 3&times;3 magnetometer array.
         </p>
-        <img class="figure-img" src="img/hardware.png" alt="Visible Touch hardware system">
+        <div class="repo-callout">
+          <div class="repo-callout-text">
+            <strong>Build your own sensor</strong>
+            <span>The parametric CAD-to-mold pipeline generates 3-part casting molds for tactile
+            sensor bodies from a single YAML configuration file.</span>
+          </div>
+          <a class="link-btn" href="https://github.com/qaz1678249/visibletouch"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><span>View on GitHub</span></a>
+        </div>
+        <img loading="lazy" class="figure-img" src="img/hardware.png" alt="Visible Touch hardware system">
         <p class="caption">
-          Figure 2: Hardware system. (a) Visuo-tactile setup: UFactory xArm7 with two RealSense
+          <span class="fig-label">Figure 2:</span> Hardware system. (a) Visuo-tactile setup: UFactory xArm7 with two RealSense
           cameras and two tactile sensors mounted on the gripper fingers. (b) Custom tactile sensor
           with anti-slip skin. (c) Internal structure of the tactile sensor. (d) Our parametric
           CAD-to-mold pipeline: CAD-generated alternative casting molds (top) and the 3D-printed
           molds with the fabricated sensor pads (bottom). (e) Physical characteristics of the
           sensor.
         </p>
-        <img class="figure-img" src="img/fabrication_steps.jpg" alt="Fabrication steps of the custom tactile sensor">
+        <img loading="lazy" class="figure-img" src="img/fabrication_steps.jpg" alt="Fabrication steps of the custom tactile sensor">
         <p class="caption">
-          Figure 8: Fabrication steps of our custom tactile sensor. (a) 3D-printed molds 1&ndash;3;
+          <span class="fig-label">Figure 8:</span> Fabrication steps of our custom tactile sensor. (a) 3D-printed molds 1&ndash;3;
           (b&ndash;c) elastomer mixing, degassing, and first pour; (d&ndash;e) magnet seating and
           second pour to the fill line; (f&ndash;g) adhesion primer and bonding to the PLA spacer;
           (h) anti-slip skin application.
@@ -592,31 +649,31 @@
           differences in absolute response reach roughly 20%, which per-channel normalization from
           dataset statistics absorbs without dedicated calibration hardware.
         </p>
-        <img class="figure-img" src="img/sensor_characterization.jpg" alt="Sensor characterization experiments">
+        <img loading="lazy" class="figure-img" src="img/sensor_characterization.jpg" alt="Sensor characterization experiments">
         <p class="caption">
-          Figure 9: Sensor characterization experiments. (a) Experiment setup: UFactory xArm7
+          <span class="fig-label">Figure 9:</span> Sensor characterization experiments. (a) Experiment setup: UFactory xArm7
           equipped with BOTA force-torque sensor and our custom tactile sensor, used to collect
           ground-truth contact normal force data. (b) Standard deviation of the 4 independently
           fabricated sensor readings under different contact normal forces.
         </p>
       </section>
 
-      <hr>
 
       <section id="appendix-tables">
         <h2>Appendix Tables</h2>
-        <p>
+        <p class="section-lead">
           The tables below collect appendix details from the arXiv paper: hardware costs, training
           settings, per-task diagnostics, seed-level simulation results, miniVLA recipe comparisons,
           and real-world data/evaluation parameters.
         </p>
 
-        <article class="finding">
-          <h3>Hardware bill of materials.</h3>
+        <details class="appendix-item">
+          <summary>Hardware bill of materials</summary>
+          <div class="appendix-body">
           <div class="table-wrap">
             <table>
               <caption>
-                Table 3: Bill of materials for one tactile sensor (3&times;3 configuration). Sensor
+                <span class="fig-label">Table 3:</span> Bill of materials for one tactile sensor (3&times;3 configuration). Sensor
                 pad components are consumable and can be replaced without replacing the PCB. PCB
                 costs are rough estimates and vary significantly with order quantity.
               </caption>
@@ -640,13 +697,15 @@
               </tbody>
             </table>
           </div>
-        </article>
+          </div>
+        </details>
 
-        <article class="finding">
-          <h3>BC-Transformer training configuration.</h3>
+        <details class="appendix-item">
+          <summary>BC-Transformer training configuration</summary>
+          <div class="appendix-body">
           <div class="table-wrap">
-            <table>
-              <caption>Table 4: BC-Transformer training configuration for LIBERO multitask experiments.</caption>
+            <table class="kv">
+              <caption><span class="fig-label">Table 4:</span> BC-Transformer training configuration for LIBERO multitask experiments.</caption>
               <thead><tr><th>Component / Hyperparameter</th><th>Value</th></tr></thead>
               <tbody>
                 <tr><td>Visual backbone</td><td>ResNet-18 (random init, remove_layer_num=4, no stride change)</td></tr>
@@ -671,14 +730,16 @@
               </tbody>
             </table>
           </div>
-        </article>
+          </div>
+        </details>
 
-        <article class="finding">
-          <h3>LIBERO task diagnostics.</h3>
+        <details class="appendix-item">
+          <summary>LIBERO task diagnostics</summary>
+          <div class="appendix-body">
           <div class="table-wrap">
             <table>
               <caption>
-                Table 6: Rescue outliers: tasks where Avg. Arrow produces the largest gain over
+                <span class="fig-label">Table 6:</span> Rescue outliers: tasks where Avg. Arrow produces the largest gain over
                 plain 2-view within each suite. All four involve visually ambiguous grasp
                 configurations (slippery, small, occluded, or perched objects).
               </caption>
@@ -701,7 +762,7 @@
           <div class="table-wrap">
             <table>
               <caption>
-                Table 7: Per-task correlations between &Delta; = Visible Touch 2v - plain 2v and
+                <span class="fig-label">Table 7:</span> Per-task correlations between &Delta; = Visible Touch 2v - plain 2v and
                 task properties, pooled across all 40 LIBERO tasks. After controlling for headroom,
                 only #contact onsets and trajectory length retain independent predictive signal.
               </caption>
@@ -721,7 +782,7 @@
 
           <div class="table-wrap">
             <table>
-              <caption>Table 8: Effect of camera configuration on the plain (no-overlay) BC-Transformer baseline. Mean success rate (%) over 3 seeds per cell, 10 tasks per suite.</caption>
+              <caption><span class="fig-label">Table 8:</span> Effect of camera configuration on the plain (no-overlay) BC-Transformer baseline. Mean success rate (%) over 3 seeds per cell, 10 tasks per suite.</caption>
               <thead><tr><th>Suite</th><th>1-view Plain</th><th>2-view Plain</th><th>&Delta; (2v - 1v)</th></tr></thead>
               <tbody>
                 <tr><td>OBJECT</td><td>90.7</td><td>82.8</td><td>-7.9</td></tr>
@@ -732,13 +793,15 @@
               </tbody>
             </table>
           </div>
-        </article>
+          </div>
+        </details>
 
-        <article class="finding">
-          <h3>Seed-level BC-Transformer results.</h3>
+        <details class="appendix-item">
+          <summary>Seed-level BC-Transformer results</summary>
+          <div class="appendix-body">
           <div class="table-wrap">
             <table>
-              <caption>Tables 9&ndash;11: Per-seed success rates (%) for the three headline 2-view BC-Transformer conditions (Plain, Proprio, Visible Touch with default Avg. Arrow overlay).</caption>
+              <caption><span class="fig-label">Tables 9&ndash;11:</span> Per-seed success rates (%) for the three headline 2-view BC-Transformer conditions (Plain, Proprio, Visible Touch with default Avg. Arrow overlay).</caption>
               <thead><tr><th>Condition</th><th>Suite</th><th>Seed 12345</th><th>Seed 23456</th><th>Seed 34567</th><th>Mean</th><th>SD</th></tr></thead>
               <tbody>
                 <tr><td>Plain</td><td>OBJECT</td><td>84.5</td><td>73.5</td><td>90.5</td><td>82.8</td><td>7.0</td></tr>
@@ -761,10 +824,12 @@
             Touch 2v has the narrowest cross-seed spreads on every suite (SD between 1.2% and 2.7%),
             indicating that the overlay both improves average performance and stabilizes training.
           </p>
-        </article>
+          </div>
+        </details>
 
-        <article class="finding">
-          <h3>miniVLA pretraining and recipe comparison.</h3>
+        <details class="appendix-item">
+          <summary>miniVLA pretraining and recipe comparison</summary>
+          <div class="appendix-body">
           <p>
             Visible Touch-miniVLA (Qwen2.5-0.5B with fused DINOv2 + SigLIP 224 px encoder) was
             pretrained from scratch on contact-overlay LIBERO_90 on 4&times; NVIDIA L40S GPUs at
@@ -777,15 +842,15 @@
             FLIPUD is the only transform under which the Stanford checkpoint succeeds (5/5 vs. 0/5
             for the others).
           </p>
-          <img class="figure-img" src="img/minivla_per_task.png" alt="Per-task LIBERO_90 comparison of Visible Touch miniVLA vs Stanford baseline">
+          <img loading="lazy" class="figure-img" src="img/minivla_per_task.png" alt="Per-task LIBERO_90 comparison of Visible Touch miniVLA vs Stanford baseline">
           <p class="caption">
-            Figure 10: Per-task success rates on LIBERO_90: Visible Touch-miniVLA (contact-overlay
+            <span class="fig-label">Figure 10:</span> Per-task success rates on LIBERO_90: Visible Touch-miniVLA (contact-overlay
             pretraining) vs. the re-evaluated Stanford miniVLA baseline.
           </p>
           <div class="table-wrap">
             <table>
               <caption>
-                Table 12: Per-recipe comparison for History-2 miniVLA on LIBERO suites. Baseline:
+                <span class="fig-label">Table 12:</span> Per-recipe comparison for History-2 miniVLA on LIBERO suites. Baseline:
                 clean non-contact fine-tuning with clean evaluation. Visible Touch: contact-overlay
                 fine-tuning with overlay-augmented evaluation. For the suite-specific recipes used in
                 the main results, Visible Touch performance is mean &plusmn; standard error over 5
@@ -809,13 +874,15 @@
             recipe evaluated, with gains from +10.5 pp to +43.1 pp, indicating that the improvement
             is not specific to a particular fine-tuning recipe.
           </p>
-        </article>
+          </div>
+        </details>
 
-        <article class="finding">
-          <h3>Real-world fine-tuning and evaluation details.</h3>
+        <details class="appendix-item">
+          <summary>Real-world fine-tuning and evaluation details</summary>
+          <div class="appendix-body">
           <div class="table-wrap">
-            <table>
-              <caption>Table 13: &pi;<sub>0.5</sub> LoRA fine-tuning hyperparameters. All 32 runs (4 tasks &times; 8 input variants) share these settings; only the input variant differs.</caption>
+            <table class="kv">
+              <caption><span class="fig-label">Table 13:</span> &pi;<sub>0.5</sub> LoRA fine-tuning hyperparameters. All 32 runs (4 tasks &times; 8 input variants) share these settings; only the input variant differs.</caption>
               <thead><tr><th>Setting</th><th>Value</th></tr></thead>
               <tbody>
                 <tr><td>Base checkpoint</td><td>pi05_droid</td></tr>
@@ -854,7 +921,7 @@
 
           <div class="table-wrap">
             <table>
-              <caption>Table 14: Per-task demonstration statistics (post-acceptance, post-idle-trim). Length is mean &plusmn; standard deviation in control steps and seconds at 10 Hz.</caption>
+              <caption><span class="fig-label">Table 14:</span> Per-task demonstration statistics (post-acceptance, post-idle-trim). Length is mean &plusmn; standard deviation in control steps and seconds at 10 Hz.</caption>
               <thead><tr><th>Task</th><th>n</th><th>Length (steps)</th><th>Duration (s)</th><th>Min/Max (steps)</th></tr></thead>
               <tbody>
                 <tr><td>cube</td><td>100</td><td>131 &plusmn; 86</td><td>13.1 &plusmn; 8.6</td><td>90 / 972</td></tr>
@@ -889,7 +956,7 @@
 
           <div class="table-wrap">
             <table>
-              <caption>Table 16: Rollout budget and action scale per real-world task.</caption>
+              <caption><span class="fig-label">Table 16:</span> Rollout budget and action scale per real-world task.</caption>
               <thead><tr><th>Task</th><th>Step budget</th><th>Action scale</th></tr></thead>
               <tbody>
                 <tr><td>Lift</td><td>150</td><td>0.8</td></tr>
@@ -899,10 +966,10 @@
               </tbody>
             </table>
           </div>
-        </article>
+          </div>
+        </details>
       </section>
 
-      <hr>
 
       <section id="conclusion">
         <h2>Conclusion</h2>
@@ -929,15 +996,18 @@
       </section>
 
       <section id="citation">
-        <h2>Citation</h2>
-<pre><code>@article{dogan2026visibletouch,
+        <h2>BibTeX</h2>
+        <div class="bibtex">
+          <button class="copy-btn" type="button" data-target="#bibtex-code">Copy</button>
+<pre><code id="bibtex-code">@article{dogan2026visibletouch,
   title   = {Visible Touch: Rendering Contact for Visuomotor Policies},
   author  = {Dogan, Metin Alp and Sun, Edward and Xu, Feng and Wu, Daniel and
              Peng, Allen and Hong, Dennis and Cui, Yuchen},
   journal = {arXiv preprint arXiv:2609.14156},
   year    = {2026}
 }</code></pre>
-        <p class="caption">
+        </div>
+        <p class="acknowledgments">
           This work was conducted at the University of California, Los Angeles, with institutional
           and computational support from the UCLA Department of Computer Science. We thank the
           members of the UCLA Robot Intelligence Laboratory and RoMeLa for helpful discussions and
@@ -945,5 +1015,38 @@
         </p>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <p>
+        <a href="https://arxiv.org/abs/2609.14156">arXiv</a> &middot;
+        <a href="https://github.com/qaz1678249/visibletouch">Hardware</a> &middot;
+        <a href="#top">Back to top</a>
+      </p>
+    </footer>
+
+    <script>
+      document.querySelectorAll('.copy-btn').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const code = document.querySelector(btn.dataset.target).textContent;
+          try {
+            await navigator.clipboard.writeText(code);
+            btn.textContent = 'Copied';
+          } catch (err) {
+            btn.textContent = 'Press Ctrl+C';
+          }
+          setTimeout(() => { btn.textContent = 'Copy'; }, 1600);
+        });
+      });
+
+      const navLinks = [...document.querySelectorAll('.nav-links a')];
+      const sections = navLinks.map((a) => document.querySelector(a.getAttribute('href')));
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          navLinks.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      sections.forEach((s) => s && observer.observe(s));
+    </script>
   </body>
 </html>
