@@ -156,6 +156,17 @@ a:hover {
   background: var(--ucla-gold);
 }
 
+.venue-tag {
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--ucla-gold);
+  color: var(--ucla-darker);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 h1 {
   margin: 0 0 26px;
   font-family: var(--heading);
